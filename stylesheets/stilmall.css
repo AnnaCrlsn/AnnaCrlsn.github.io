@@ -1,0 +1,629 @@
+/*  Av Anna Carlsson, 2015
+    External stilmall till min hemsida */
+
+/*Importerade fonter*/
+/*@font-face {
+  font-family: FuturaStd-Light;
+  src: url(../fonts/FuturaStd-Light_0.otf);
+}
+
+
+@font-face {
+  font-family: FuturaStd-CondensedBold;
+  src: url(../fonts/FuturaStd-CondensedBold_0.otf);
+}
+
+@font-face {
+  font-family: FuturaStd-CondensedLight;
+  src: url(../fonts/FuturaStd-CondensedLight_0.otf);
+}*/
+
+/*Generell design*/
+body {
+  font-family: "futura-pt",sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: justify;
+  color: #000;
+  background-color: #fafafa;
+}
+
+.pagewidth {
+  background-color: #fff;
+  box-shadow: 0 0 5px #646464;
+  width: 950px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: "futura-pt-condensed",sans-serif;
+  font-weight: bold;
+  font-size: 190%;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-family: "futura-pt",sans-serif;
+  font-weight: lighter;
+  font-size: 99%;
+  line-height: 110%;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 0.5px;
+  font-weight: lighter;
+}
+
+h3 {
+  font-family: "futura-pt",sans-serif;
+  font-weight: lighter;
+  font-size: 110%;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+h4 {
+  font-family: "futura-pt-condensed",sans-serif;
+  font-size: 140%;
+  line-height: 5%;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+h5 {
+  font-family: "futura-pt-condensed",sans-serif;
+  font-weight: bold;
+  font-size: 190%;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+
+figcaption {
+  font-family: "futura-pt-condensed",sans-serif;
+  font-size: 130%;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: lighter;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  letter-spacing: 0.5px;
+}
+
+figure {
+  margin-top: 10px;
+  margin: 0;
+}
+
+.header-menues {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.headline-above-2-images-headlines {
+  font-family: "futura-pt-condensed",sans-serif;
+  font-size: 140%;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: lighter;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.headline-underneath-main-headline {
+  margin-top: 0;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+ol {
+  padding: 25px;
+}
+
+
+/*Länkar*/
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7d7d7d;
+}
+
+.active {
+  font-weight: bolder;
+}
+
+
+/*Huvudmeny*/
+header nav {
+  position: absolute;
+  top: 45px;
+  right: 100px;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav li {
+  display: inline;
+}
+
+header nav a {
+  font-size: 150%;
+  text-transform: lowercase;
+  margin-left: 100px;
+}
+
+
+/*Bilder*/
+img {
+  display: block;
+}
+
+
+/*Framsida*/
+.overlay-frontpage-headline {
+  position: absolute;
+  top: 42px;
+  left: 42px;
+  font-size: 350%;
+  text-shadow: 1px 3px 6px #666;
+}
+
+.front-image-container {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+a.front-image-container:hover {
+  color: #000;
+}
+
+/*Bildmenyer*/
+.imagelink {
+  display: block;
+  float: left;
+}
+
+.imagelink:hover {
+  opacity: 0.5;
+}
+
+/*Marginaler*/
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-right-10 {
+  margin-right: 10px;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.margin-top-right-10 {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.margin-top-right-bottom-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.margin-top-bottom-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/*Layout 230px text + 710px bilder*/
+.text-column {
+  width: 230px;
+  float: left;
+  margin-right: 10px;
+}
+
+.images-column {
+  width: 710px;
+  float: left;
+  display: block;
+}
+
+/*Kolumner*/
+.text-left {
+  width: 230px;
+  float: left;
+  margin-right: 10px;
+}
+
+.images-right {
+  width: 710px;
+  float: left;
+}
+
+
+/*350 px bilder med rubriker*/
+.image-350-left{
+  width: 350px;
+  margin-right: 10px;
+  float: left;
+}
+
+.image-350-right{
+  width: 350px;
+  float: left;
+}
+
+
+/*230 px bilder med rubriker*/
+.image-230-left{
+  width: 230px;
+  margin-right: 10px;
+  float: left;
+}
+.image-230-middle{
+  width: 230px;
+  margin-right: 10px;
+  float: left;
+}
+
+.image-230-right{
+  width: 230px;
+  float: left;
+}
+
+.clear-left {
+  clear: left;
+}
+
+
+/*About me sidan*/
+.background-image {
+  background-image: url(../images/backgroundimage.jpg);
+  margin-top: 10px;
+}
+
+.backgroundimage2 {
+  display: none;
+}
+
+.introduction {
+  width:350px;
+}
+
+.margin-intro {
+  margin-top:60px;
+}
+
+.padding-from-background-image {
+  padding-top: 10px;
+}
+
+.right-margin {
+  width:830px;
+  float: left;
+}
+
+.text-cv {
+  padding: 0;
+  margin:0;
+  display: flex;
+  text-align: left;
+}
+
+.labels {
+  font-weight: bolder;
+  text-align: right;
+  padding: 0;
+  margin:0;
+  width: 110px;
+  float: left;
+  margin-right: 10px;
+}
+
+.main-labels {
+  font-family: FuturaStd-CondensedLight, sans-serif;
+  font-size: 120%;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: lighter;
+  padding: 0;
+  margin:0;
+}
+
+table, td, th {
+  border: 1px solid gray
+}
+
+td {
+  padding-right: 20px;
+}
+
+label {
+  display: block;
+}
+
+
+/*Sidfot*/
+.text-footer {
+  margin: 8px;
+}
+
+footer {
+  clear: left;
+  text-align: center;
+  padding: 0.5px;
+}
+
+.hide-message {
+  display: none;
+}
+
+/*Responisve deign*/
+@media screen and (max-width: 600px) {
+
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+
+  .responsive-movie {
+    max-width:100%;
+    height: auto;
+    width: 100%;
+  }
+
+  .margin-right-5 {
+    margin-right: 5px;
+  }
+
+  textarea {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+
+  .padding-from-background-image {
+    padding: 0;
+  }
+
+  /*Huvudmeny*/
+  header nav {
+    right: 20px;
+  }
+
+  header nav a {
+    font-size: 100%;
+    margin-left: 15px;
+  }
+
+  .pagewidth {
+    width: 100%;
+    max-width: 540px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .overlay-frontpage-headline {
+    top: 20px;
+    left: 30px;
+    font-size: 180%;
+    text-shadow: 1px 1px 1px #666;
+  }
+
+  .text-column {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .cv-responsive {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .images-column {
+      width: 100%;
+      float: none;
+      clear: left;
+  }
+
+  .text-left, .introduction {
+      width: 100%;
+      float: none;
+  }
+
+  .margin-intro {
+    margin-top: 20px;
+  }
+
+  .images-right {
+      width: 100%;
+      float: none;
+  }
+
+  .image-350-left, .image-350-right {
+    width: 100%;
+    margin:0;
+    float: none;
+  }
+
+  .image-230-left, .image-230-middle, .image-230-right {
+    width: 100%;
+    margin:0;
+    float: none;
+  }
+
+  .hide-image-responsive {
+    display:none;
+  }
+
+  .hide-text-responsive {
+    display:none;
+  }
+
+  .logo-menu {
+    margin: 0;
+    margin-top: 5px;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+
+  .logo {
+    max-width: 130px;
+    height: auto;
+    width: 100%;
+  }
+
+  .backgroundimage2 {
+    display: block;
+  }
+
+  .background-image {
+    background-image: none;
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+  /*Huvudmeny*/
+  header nav {
+    right: 20px;
+    position: static;
+  }
+
+  header nav a {
+    font-size: 100%;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .overlay-frontpage-headline {
+    top: 10px;
+    left: 20px;
+    font-size: 150%;
+  }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+  /*Huvudmeny*/
+  header nav {
+    position: static;
+  }
+
+  header nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  header nav a:hover {
+    color: #000;
+    opacity: 0.5;
+  }
+
+  header nav a {
+    font-size: 110%;
+    display: block;
+    background-color: #444;
+    padding: 4px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  header nav a:hover {
+    opacity:0.5;
+  }
+
+  .overlay-frontpage-headline {
+    top:6px;
+    left:8px;
+    font-size: 100%;
+  }
+
+}
+
+
+@media screen and (max-width: 300px) {
+
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 180%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 90%;
+  }
+
+  h3 {
+    font-size: 100%;
+  }
+
+  .overlay-frontpage-headline {
+    top:6px;
+    left:8px;
+    font-size: 80%;
+  }
+
+  .headline-above-2-images-headlines {
+    font-size: 110%;
+    line-height: 100%;
+  }
+
+  figcaption {
+    font-size: 105%;
+    line-height: 100%;
+    letter-spacing: 0;
+  }
+
+  h4 {
+    font-size: 100%;
+  }
+
+}
