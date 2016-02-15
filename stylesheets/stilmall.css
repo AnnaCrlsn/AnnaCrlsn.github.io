@@ -1,37 +1,18 @@
-/*  Av Anna Carlsson, 2015
+/*  Av Anna Carlsson, 2016
     External stilmall till min hemsida */
-
-/*Importerade fonter*/
-/*@font-face {
-  font-family: FuturaStd-Light;
-  src: url(../fonts/FuturaStd-Light_0.otf);
-}
-
-
-@font-face {
-  font-family: FuturaStd-CondensedBold;
-  src: url(../fonts/FuturaStd-CondensedBold_0.otf);
-}
-
-@font-face {
-  font-family: FuturaStd-CondensedLight;
-  src: url(../fonts/FuturaStd-CondensedLight_0.otf);
-}*/
 
 /*Generell design*/
 body {
   font-family: "futura-pt",sans-serif;
   font-weight: lighter;
-  font-size: 14px;
-  line-height: 150%;
+  font-size: 13pt;
+  line-height: 130%;
   text-align: justify;
   color: #000;
-  background-color: #fafafa;
+  background-color: #fff;
 }
 
 .pagewidth {
-  background-color: #fff;
-  box-shadow: 0 0 5px #646464;
   width: 950px;
   max-width: 960px;
   margin: 0 auto;
@@ -39,6 +20,7 @@ body {
   position: relative;
 }
 
+/*Text*/
 p {
   margin: 0;
   margin-bottom: 10px;
@@ -47,11 +29,10 @@ p {
 h1 {
   font-family: "futura-pt-condensed",sans-serif;
   font-weight: bold;
-  font-size: 190%;
+  font-size: 22pt;
   line-height: 100%;
   text-transform: uppercase;
   text-align: right;
-  letter-spacing: 0.5px;
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -59,70 +40,63 @@ h1 {
 h2 {
   font-family: "futura-pt",sans-serif;
   font-weight: lighter;
-  font-size: 99%;
+  font-size: 11.4pt;
   line-height: 110%;
   text-transform: uppercase;
   text-align: right;
-  letter-spacing: 0.5px;
   font-weight: lighter;
 }
 
 h3 {
   font-family: "futura-pt",sans-serif;
   font-weight: lighter;
-  font-size: 110%;
+  font-size: 12pt;
   text-transform: uppercase;
   text-align: left;
   margin: 0;
-  letter-spacing: 0.5px;
 }
 
 h4 {
   font-family: "futura-pt-condensed",sans-serif;
-  font-size: 140%;
-  line-height: 5%;
+  font-size: 18pt;
   text-transform: uppercase;
   text-align: left;
+  margin-top: 0px;
   margin-bottom: 10px;
-  letter-spacing: 1px;
 }
 
 h5 {
   font-family: "futura-pt-condensed",sans-serif;
-  font-weight: bold;
-  font-size: 190%;
-  line-height: 100%;
+  font-size: 16pt;
   text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.5px;
-  margin-top: 180px;
-  margin-bottom: 180px;
+  font-weight: lighter;
+  margin-top: -10px;
+  margin-bottom: 0px;
+}
+
+h6 {
+  font-family: "futura-pt-condensed",sans-serif;
+  font-size: 16pt;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: lighter;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 figcaption {
   font-family: "futura-pt-condensed",sans-serif;
-  font-size: 130%;
+  font-size: 14pt;
   text-transform: uppercase;
   text-align: right;
   font-weight: lighter;
   margin-top: 10px;
   margin-bottom: 2px;
-  letter-spacing: 0.5px;
-}
-
-figure {
-  margin-top: 10px;
-  margin: 0;
-}
-
-.header-menues {
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .headline-above-2-images-headlines {
   font-family: "futura-pt-condensed",sans-serif;
-  font-size: 140%;
+  font-size: 16pt;
   text-transform: uppercase;
   text-align: right;
   font-weight: lighter;
@@ -139,13 +113,25 @@ figure {
 }
 
 ol {
-  padding: 25px;
+  padding-top: 17px;
+  padding-left: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
 }
 
+li {
+  font-size: 12pt;
+  line-height: 115%;
+}
+
+sup {
+  vertical-align: super;
+  line-height: 0;
+}
 
 /*Länkar*/
 a {
-  color: #000;
+  color: #2d5aac;
   text-decoration: none;
 }
 
@@ -154,15 +140,30 @@ a:hover {
 }
 
 .active {
-  font-weight: bolder;
+  font-weight: 400;
+}
+
+.blacklink{
+  color: #000;
+}
+
+.backto {
+  clear: both;
+  position: relative;
+}
+
+.linkbackto {
+  display: block;
+  position: absolute;
+  top: -20px;
 }
 
 
 /*Huvudmeny*/
 header nav {
   position: absolute;
-  top: 45px;
-  right: 100px;
+  top: 43px;
+  right: 110px;
 }
 
 header nav ul {
@@ -175,9 +176,9 @@ header nav li {
 }
 
 header nav a {
-  font-size: 150%;
+  font-size: 14pt;
   text-transform: lowercase;
-  margin-left: 100px;
+  margin-left: 110px;
 }
 
 
@@ -186,14 +187,20 @@ img {
   display: block;
 }
 
+figure {
+  margin-top: 10px;
+  margin: 0;
+}
+
 
 /*Framsida*/
 .overlay-frontpage-headline {
   position: absolute;
-  top: 42px;
-  left: 42px;
-  font-size: 350%;
-  text-shadow: 1px 3px 6px #666;
+  top: 17px;
+  left: 100px;
+  font-size: 30pt;
+  text-shadow: 1px 2px 3px #666;
+  text-align: left;
 }
 
 .front-image-container {
@@ -204,11 +211,13 @@ img {
   margin-bottom: 10px;
 }
 
-a.front-image-container:hover {
-  color: #000;
-}
 
 /*Bildmenyer*/
+.header-menues {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .imagelink {
   display: block;
   float: left;
@@ -218,7 +227,20 @@ a.front-image-container:hover {
   opacity: 0.5;
 }
 
+.nohover {
+  display: block;
+  float: left;
+}
+
+.hide-text-in-menue {
+  display:none;
+}
+
 /*Marginaler*/
+.margin-top-3 {
+  margin-top: 3px;
+}
+
 .margin-top-10 {
   margin-top: 10px;
 }
@@ -231,20 +253,29 @@ a.front-image-container:hover {
   margin-bottom: 10px;
 }
 
-.margin-top-right-10 {
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
 .margin-top-right-bottom-10 {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
 }
 
+.margin-top-right-10 {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
 .margin-top-bottom-10 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.margin-right-bottom-10 {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.margin-top-text {
+  margin-top: 33px;
 }
 
 
@@ -253,24 +284,14 @@ a.front-image-container:hover {
   width: 230px;
   float: left;
   margin-right: 10px;
+  box-sizing: border-box;
+  padding-right: 10px;
 }
 
 .images-column {
   width: 710px;
   float: left;
   display: block;
-}
-
-/*Kolumner*/
-.text-left {
-  width: 230px;
-  float: left;
-  margin-right: 10px;
-}
-
-.images-right {
-  width: 710px;
-  float: left;
 }
 
 
@@ -323,23 +344,11 @@ a.front-image-container:hover {
   width:350px;
 }
 
-.margin-intro {
-  margin-top:60px;
-}
-
-.padding-from-background-image {
-  padding-top: 10px;
-}
-
-.right-margin {
-  width:830px;
-  float: left;
-}
-
 .text-cv {
   padding: 0;
   margin:0;
   display: flex;
+  display:-webkit-flex;
   text-align: left;
 }
 
@@ -348,14 +357,14 @@ a.front-image-container:hover {
   text-align: right;
   padding: 0;
   margin:0;
-  width: 110px;
+  width: 220px;
   float: left;
   margin-right: 10px;
 }
 
 .main-labels {
-  font-family: FuturaStd-CondensedLight, sans-serif;
-  font-size: 120%;
+  font-family: "futura-pt-condensed",sans-serif;
+  font-size: 14pt;
   text-transform: uppercase;
   text-align: left;
   font-weight: lighter;
@@ -363,115 +372,46 @@ a.front-image-container:hover {
   margin:0;
 }
 
-table, td, th {
-  border: 1px solid gray
-}
-
-td {
-  padding-right: 20px;
-}
-
-label {
-  display: block;
-}
-
 
 /*Sidfot*/
 .text-footer {
-  margin: 8px;
+  margin: 10px;
 }
 
 footer {
   clear: left;
   text-align: center;
-  padding: 0.5px;
 }
 
-.hide-message {
-  display: none;
-}
+
+
+
+
+
+
+
+
+
 
 /*Responisve deign*/
-@media screen and (max-width: 600px) {
-
-  .responsive-image {
-    max-width: 100%;
-    height: auto;
-    width: 100%;
-  }
-
-  .responsive-movie {
-    max-width:100%;
-    height: auto;
-    width: 100%;
-  }
-
-  .margin-right-5 {
-    margin-right: 5px;
-  }
-
-  textarea {
-    max-width: 100%;
-    height: auto;
-    width: 100%;
-  }
-
-  .padding-from-background-image {
-    padding: 0;
-  }
-
-  /*Huvudmeny*/
-  header nav {
-    right: 20px;
-  }
-
-  header nav a {
-    font-size: 100%;
-    margin-left: 15px;
-  }
+@media screen and (max-width: 768px) {
 
   .pagewidth {
     width: 100%;
-    max-width: 540px;
     padding: 20px;
     box-sizing: border-box;
   }
 
-  .overlay-frontpage-headline {
-    top: 20px;
-    left: 30px;
-    font-size: 180%;
-    text-shadow: 1px 1px 1px #666;
-  }
-
-  .text-column {
-    width: 100%;
-    margin-right: 0;
-  }
-
-  .cv-responsive {
-    width: 100%;
-    margin-right: 0;
+  .text-column, .introduction {
+      width: 100%;
+      margin-right: 0;
+      float: none;
   }
 
   .images-column {
       width: 100%;
       float: none;
       clear: left;
-  }
-
-  .text-left, .introduction {
-      width: 100%;
-      float: none;
-  }
-
-  .margin-intro {
-    margin-top: 20px;
-  }
-
-  .images-right {
-      width: 100%;
-      float: none;
   }
 
   .image-350-left, .image-350-right {
@@ -486,6 +426,18 @@ footer {
     float: none;
   }
 
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+
+  .responsive-movie {
+    max-width:100%;
+    height: auto;
+    width: 100%;
+  }
+
   .hide-image-responsive {
     display:none;
   }
@@ -496,53 +448,95 @@ footer {
 
   .logo-menu {
     margin: 0;
-    margin-top: 5px;
+    margin-top: 0px;
     max-width: 100%;
     height: auto;
     width: 100%;
   }
 
   .logo {
-    max-width: 130px;
+    max-width: 100px;
     height: auto;
     width: 100%;
+  }
+
+.linkbackto {
+  position: static;
+  padding-top: 10px;
+}
+
+  /*Huvudmeny*/
+  header nav {
+    right: 20px;
+  }
+
+  header nav a {
+    font-size: 100%;
+    margin-left: 80px;
+  }
+
+  /*Bildmeny*/
+  .hide-text-in-menue {
+  display:block;
+}
+
+  h6 {
+    margin-top: 7px;
+  }
+
+/*Framsida*/
+  .overlay-frontpage-headline {
+    top: 0px;
+    left: 30px;
+    font-size: 20pt;
+    text-shadow: 1px 1px 1px #666;
+  }
+
+/*About me sidan*/
+  .background-image {
+    background-image: none;
   }
 
   .backgroundimage2 {
     display: block;
   }
 
-  .background-image {
-    background-image: none;
+  .cv-responsive {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  h4 {
+    margin-top: 5px;
   }
 
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
   /*Huvudmeny*/
   header nav {
-    right: 20px;
+    right: 0px;
     position: static;
   }
 
   header nav a {
     font-size: 100%;
     margin-right: 0;
-    margin-left: 20px;
+    margin-left: 30px;
   }
 
   .overlay-frontpage-headline {
     top: 10px;
     left: 20px;
-    font-size: 150%;
+    font-size: 18pt;
   }
 
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
 
   /*Huvudmeny*/
   header nav {
@@ -559,11 +553,15 @@ footer {
     opacity: 0.5;
   }
 
+  .whitelink {
+    color: #fff;
+  }
+
   header nav a {
-    font-size: 110%;
+    font-size: 13pt;
     display: block;
     background-color: #444;
-    padding: 4px;
+    padding: 7px;
     margin-bottom: 5px;
     text-align: center;
     color: #fff;
@@ -576,54 +574,132 @@ footer {
     opacity:0.5;
   }
 
+  header nav {
+    position: static;
+  }
+
+  header nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  header nav a:hover {
+    color: #000;
+    opacity: 0.5;
+  }
+
+  .backto {
+    color: #fff;
+    font-size: 13pt;
+    display: block;
+    background-color: #444;
+    padding: 7px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .backto:hover {
+    opacity:0.5;
+  }
+
+
+/*Framsida*/
   .overlay-frontpage-headline {
     top:6px;
     left:8px;
-    font-size: 100%;
+    font-size: 16pt;
   }
 
-}
-
-
-@media screen and (max-width: 300px) {
-
+/*Text*/
   body {
-    font-size: 12px;
+    font-size: 10pt;
+    line-height: 130%;
+  }
+  p {
+    margin: 0;
+    margin-bottom: 10px;
   }
 
-  h1 {
-    font-size: 180%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
+    h1 {
+      font-size: 16pt;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
 
   h2 {
-    font-size: 90%;
+    font-size: 10pt;
+    line-height: 100%;
   }
 
   h3 {
-    font-size: 100%;
+    font-size: 10pt;
   }
 
-  .overlay-frontpage-headline {
-    top:6px;
-    left:8px;
-    font-size: 80%;
+  h5 {
+    font-family: "futura-pt",sans-serif;
+    font-weight: lighter;
+    font-size: 13pt;
+    text-transform: lowercase;
   }
 
-  .headline-above-2-images-headlines {
-    font-size: 110%;
-    line-height: 100%;
+  h6 {
+    font-size: 10pt;
+    margin-top: 1px;
   }
 
   figcaption {
-    font-size: 105%;
+    font-size: 12pt;
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+
+  .headline-above-2-images-headlines {
+    font-size: 12pt;
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+
+  li {
+    font-size: 10pt;
     line-height: 100%;
-    letter-spacing: 0;
+  }
+
+/*About me sidan*/
+  .text-cv {
+    padding: 0;
+    margin:0;
+    display: flex;
+    display:-webkit-flex;
+    text-align: left;
   }
 
   h4 {
-    font-size: 100%;
+    font-size: 14pt;
   }
+
+  .main-labels {
+    font-size: 12pt;
+    padding: 0;
+    margin:0;
+  }
+
+  .labels {
+    padding: 0;
+    margin:0;
+    width: 90px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+}
+
 
 }
