@@ -6,7 +6,7 @@ body {
   font-family: "futura-pt",'Muli',sans-serif;
   font-weight: 300;
   font-size: 13pt;
-  line-height: 130%;
+  line-height: 125%;
   text-align: justify;
   color: #000;
   background-color: #fff;
@@ -120,8 +120,8 @@ ol {
 }
 
 li {
-  font-size: 12pt;
-  line-height: 112%;
+  font-size: 10.5pt;
+  line-height: 100%;
 }
 
 sup {
@@ -276,6 +276,10 @@ figure {
 
 .margin-top-text {
   margin-top: 33px;
+}
+
+.margin-intro {
+  margin-top: 55px;
 }
 
 
@@ -493,6 +497,11 @@ footer {
   }
 
 /*About me sidan*/
+
+.margin-intro {
+  margin-top: 20px;
+}
+
   .background-image {
     background-image: none;
   }
