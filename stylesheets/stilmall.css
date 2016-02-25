@@ -387,15 +387,13 @@ footer {
   text-align: center;
 }
 
+.logo {
+  border: 0;
+}
 
-
-
-
-
-
-
-
-
+.logo-menu {
+  border: 0;
+}
 
 /*Responisve deign*/
 @media screen and (max-width: 768px) {
