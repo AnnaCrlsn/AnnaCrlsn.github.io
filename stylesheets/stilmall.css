@@ -373,7 +373,8 @@ figure {
   text-align: left;
   font-weight: lighter;
   padding: 0;
-  margin:0;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 
@@ -603,7 +604,7 @@ footer {
     background-color: #444;
     padding: 7px;
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
     color: #fff;
     border-radius: 2px;
@@ -618,9 +619,9 @@ footer {
 
 /*Framsida*/
   .overlay-frontpage-headline {
-    top:6px;
+    top:0px;
     left:8px;
-    font-size: 16pt;
+    font-size: 10pt;
   }
 
 /*Text*/
@@ -694,7 +695,6 @@ footer {
   .main-labels {
     font-size: 12pt;
     padding: 0;
-    margin:0;
   }
 
   .labels {
