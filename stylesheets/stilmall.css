@@ -241,6 +241,10 @@ figure {
   margin-top: 3px;
 }
 
+.margin-bottom-5 {
+  margin-bottom: 5px;
+}
+
 .margin-top-10 {
   margin-top: 10px;
 }
@@ -272,6 +276,14 @@ figure {
 .margin-right-bottom-10 {
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
 }
 
 .margin-top-text {
@@ -551,7 +563,7 @@ footer {
   header nav a {
     font-size: 100%;
     margin-right: 0;
-    margin-left: 60px;
+    margin-left: 40px;
   }
 
   .overlay-frontpage-headline {
